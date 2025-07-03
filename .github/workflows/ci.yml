@@ -13,7 +13,7 @@ jobs:
     # Clone, build, and run tests inside the Nix environment
     - name: Run lean-mlir experiments
       run: |
-        git submodule update --init --recursive
+        git submodule update --init
         git show HEAD
         cd lean-mlir
         git show HEAD
