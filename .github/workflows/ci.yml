@@ -15,4 +15,5 @@ jobs:
       run: |
         # enter into submodule.
         cd lean-mlir
+        git show HEAD
         nix run .#test-experiments
