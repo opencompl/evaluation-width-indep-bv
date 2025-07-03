@@ -15,11 +15,4 @@ jobs:
       run: |
         # enter into submodule.
         cd lean-mlir
-
-        # 2. Build the project artifacts using nix-build
-        nix-build
-
-        # 3. Run the script INSIDE the nix environment
-        # nix-shell provides the necessary runtime dependencies
-        nix-shell --run 'lake build SSA'
-        nix-shell --run './artifacts/oopsla25-width-indep/run_experiments.sh'
+        nix run .#test-experiments
