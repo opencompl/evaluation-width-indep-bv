@@ -16,6 +16,7 @@ jobs:
         git submodule update --init
         git show HEAD
         git clone https://github.com/opencompl/lean-mlir.git
+        git remote update
         git checkout 85ad52b
         cd lean-mlir
         git show HEAD
