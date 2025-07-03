@@ -1,4 +1,4 @@
-name: "Test"
+name: "Run Evaluation CI"
 on:
   pull_request:
   push:
@@ -13,5 +13,7 @@ jobs:
     # Clone, build, and run tests inside the Nix environment
     - name: Run lean-mlir experiments
       run: |
-        # enter into submodule.
+        git show HEAD
+        cd lean-mlir
+        git show HEAD
         cd lean-mlir && git show HEAD && nix run .#test-experiments
