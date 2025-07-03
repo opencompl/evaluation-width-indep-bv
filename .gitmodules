@@ -1,3 +1,0 @@
-[submodule "lean-mlir"]
-	path = lean-mlir
-	url = http://github.com/opencompl/lean-mlir
